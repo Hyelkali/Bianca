@@ -3,15 +3,80 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
 }
 
+.navbad {
+    width: 20%;
+    background-color: #181d52;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    padding: 18px 28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+.navbad ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.navbad ul li {
+    margin-bottom: 20px;
+}
+
+.navbad ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 5px 10px;
+    background-color: #1d215e;
+    border-radius: 5px;
+}
+
+.navbad ul li a:hover {
+    background-color: #ff5722;
+}
+.navbad img{
+    align-self: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    border-color: #e64a19;
+    box-shadow: 0 0 0 4px #ddd;
+}
+
+.everything {
+    margin-top: -4em;
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    overflow-y: auto; /* This allows the content to scroll */
+    height: 100vh;
+    box-sizing: border-box;
+}
 .container {
-    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
     margin: 0 auto;
 }
 
@@ -53,7 +118,7 @@ nav ul li a {
     animation: fadeInUp 2s ease;
 }
 #hero img{
-    width: 80%;
+    width: 75%;
 }
 
 #hero .btn {
@@ -335,6 +400,36 @@ section {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .hero-content, .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image, .about-image {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .hero-text, .about-text {
+        max-width: 80%;
+    }
+
+    body {
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .navbad {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .everything {
+        width: 100%;
+        margin-left: 0;
+    }
+
     .hero-content, .about-content {
         flex-direction: column;
         text-align: center;
