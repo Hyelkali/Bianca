@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift George Owuru</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="main-header">
+        <div class="container">
+            <h1 class="logo">Gift George Owuru</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="./02.jpg" alt="Gift George Owuru">
+            </div>
+            <div class="hero-text">
+                <h2>Hello, I'm <span>Gift George Owuru</span></h2>
+                <p>As a <span>student</span> with a focus on <span>Completing my OND Programme and Web Technology</span>, I create solutions that enhance user experiences and simplify everyday tasks.</p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello, I'm Gift George Owuru, My expertise lies in designing seamless user experiences and achieving the ideal harmony between visual appeal and practical functionality.</p>
+                    <p>I Start my OND education at Captain Elechi Amadi, where I honed my skills and developed a strong foundation in technology and design. Outside of my professional work, I am passionate about contributing to open-source projects, exploring cutting-edge technologies, and developing innovative personal projects that challenge the limits of digital creativity.</p>
+                                    </div>
+                <div class="about-image">
+                    <img src="./05.jpg" alt="Bianca" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-content">
+                <div class="skill-bar">
+                    <h3>HTML & CSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <h3>JavaScript</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://picsum.photos/400/300?random=1" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A web application designed to help users manage their tasks more effectively.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://picsum.photos/400/300?random=2" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>An e-commerce platform offering a seamless shopping experience with modern features.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://picsum.photos/400/300?random=3" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A portfolio website template built with HTML, CSS, and JavaScript for developers.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <h3>Computer Operator</h3>
+                    <h4>TechWorld, 2021 - Present</h4>
+                    <p>Managed and operated computer systems and software, ensuring smooth and efficient operations. Handled troubleshooting and technical support for various hardware and software issues.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Computer Assistant</h3>
+                    <h4>Techworld, 2019 - 2021</h4>
+                    <p>Provided technical support to users, assisted with software installations and updates, and maintained computer hardware. Worked closely with the IT team to resolve technical problems and improve system performance.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Cashier</h3>
+                    <h4>LoKupCHI, 2018 - 2019</h4>
+                    <p>Processed transactions, handled cash and credit payments, and provided excellent customer service. Maintained accurate records of sales and managed inventory to ensure smooth operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you're interested in working with me, feel free to send a message through the form below or connect via email.</p>
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="formResponse"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gift George Owuru. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
